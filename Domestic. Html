@@ -1,1 +1,46 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home - Company Name</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section class="hero">
+        <h1>Welcome to [Company Name]!</h1>
+        <p>We are dedicated to providing top-notch products/services that cater to specific needs/audience...</p>
+        <p>Our commitment to excellence drives everything we do, ensuring our customers receive the best possible products/services.</p>
+        <p>At [Company Name], we believe in innovation, quality, and customer satisfaction. With a team of experts in their respective fields, we continuously strive to exceed expectations.</p>
+    </section>
+    
+    <section class="about">
+        <h2>About Us</h2>
+        <p>Founded in [year], [Company Name] has been a leading provider of [products/services] for [years in business]. Our journey began with a vision to [vision statement/goal].</p>
+        <p>Over the years, we have built a strong reputation for [quality/customer service/innovation], earning the trust of countless customers worldwide.</p>
+        <p>Our success is rooted in our dedication to [core value 1], [core value 2], and [core value 3]. These principles guide us in every decision we make, ensuring that [Company Name] remains at the forefront of [industry/niche].</p>
+    </section>
+
+    <section class="offerings">
+        <h2>Our Offerings</h2>
+        <p>At [Company Name], we offer a diverse range of [products/services] designed to meet various needs. Whether it's [specific product/service], [another specific product/service], or [third specific product/service], we have you covered.</p>
+        <p>We take pride in [unique selling proposition/what sets you apart], providing our customers with [benefit/value proposition]. Our offerings are crafted with meticulous attention to detail and a focus on delivering tangible results.</p>
+    </section>
+
+    <footer>
+        <p>Contact us at <a href="/contact">08027027000</a> for any inquiries or assistance.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
+
