@@ -1,0 +1,41 @@
+
+// Function to handle form submission
+document.addEventListener('DOMContentLoaded', () => {
+    const form = document.querySelector('form');
+
+    form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        const formData = new FormData(form);
+        const name = formData.get('name');
+        const email = formData.get('email');
+        const message = formData.get('message');
+
+        try {
+            const response = await fetch('/submit', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ name, email, message })
+            });
+
+            if (response.ok) {
+                // If form submission is successful, show a success message
+                const successMessage = document.createElement('p');
+                successMessage.textContent = 'Form submitted successfully!';
+                form.appendChild(successMessage);
+
+                // Clear form fields after successful submission
+                form.reset();
+            } else {
+                throw new Error('Form submission failed');
+            }
+        } catch (error) {
+            // Handle any errors during form submission
+            console.error('Error:', error);
+            const errorMessage = document.createElement('p');
+            errorMessage.textContent = 'There was an error submitting the form. Please try again.';
+            form.appendChild(errorMessage);
+        }
+    });
